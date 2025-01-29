@@ -1,19 +1,25 @@
  Setup:
 
-git init
-git add README.md
+git init        //Declares Git Rep Exists within//
+git add .       //Adds all files can be replaced with file name//
 git commit -m "first commit"
 git branch -M main
-git remote add origin //Rep Linl//
-git push -u origin main
+git remote add origin //Rep Link//
+git push -u origin main //Push to branch main//
 
 Can't find main branch:
 
-git init
-git add .
-git checkout -b “Master” (If the Master branch does not exist, it will be created and switched to)
+git init        //Declares Git Rep Exists within//
+git add .       //Adds all files can be replaced with file name//
+git checkout -b “Master”    //Creates Master branch if doesn't exist, and switch to//
 git commit -m “First Commit”
-git remote add origin paste the link associated with your GitHub repository here
-git remote -v (when you run this command, you should see your repository appear twice…once with a (fetch) at the end and once with a (push) at the end)
-git branch //Shows  branch name you intend on pushing to appear in green//
-git push --set-upstream origin Master
+git remote add origin       //Rep Link//
+git remote -v       //Shows Rep twice with a (fetch) end and with a (push) at the end//
+git branch          //Shows  branch name you intend on pushing to appear in green//
+git push --set-upstream origin Master //Push to branch Master//
+
+Push existing Rep:
+
+git remote add origin //Rep Link//
+git branch -M main
+git push -u origin main //Push to branch main//
